@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Fotografi</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <div class="logo">
+          <img src="assets/img/logoweb.png" alt="" />
+        </div>
+        <nav class="nav-list">
+          <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Tentang</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Kontak</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="jumbotron">
+        <div class="jumbotron-desc">
+          <h1 class="title">Blog Fotografi</h1>
+          <p>Berisi informasi yang menarik seputar dunia fotografi</p>
+        </div>
+        <div class="vector">
+          <img src="assets/img/vector.png" alt="" />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div id="content">
+        <article class="card">
+          <h2>Apa itu Fotografi?</h2>
+          <img
+            src="assets/img/fotografi1.jpg"
+            alt="Apa itu Fotografi?"
+            class="picture"
+          />
+          <p>
+            Fotografi (bahasa Inggris: photography, yang berasal dari kata
+            Yunani yaitu "phos": cahaya dan "graphien": melukis/menulis) adalah
+            proses melukis/menulis dengan menggunakan media cahaya. Sebagai
+            istilah umum, fotografi berarti proses atau metode untuk
+            menghasilkan gambar atau foto dari suatu objek dengan merekam
+            pantulan cahaya yang mengenai objek tersebut pada media yang peka
+            cahaya. Alat paling populer untuk menangkap cahaya ini adalah
+            kamera. Tanpa cahaya, tidak ada foto yang bisa dibuat.
+          </p>
+          <button type="button" class="btn-collapse">Lebih Lengkap...</button>
+          <div class="collapse">
+            <p>
+              Fotografi juga dapat dikatakan sebagai proses dalam menghasilkan
+              gambar atau foto dari sebuah objek dengan cara melakukan perekaman
+              dari pantulan cahaya yang mengenai objek tersebut di sebuah media
+              yang sensitif terhadap cahaya.
+            </p>
+            <p>
+              Di zaman modern seperti saat ini, sudah sangat jarang sekali
+              fotografer yang menggunakan film. Jadi kamera digital saat ini
+              sudah berkembang dan memiliki digital ISO untuk menghasilkan foto
+              yang berkualitas.
+            </p>
+          </div>
+          <script>
+            var coll = document.getElementsByClassName("btn-collapse");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                  content.style.maxHeight = null;
+                } else {
+                  content.style.maxHeight = content.scrollHeight + "px";
+                }
+              });
+            }
+          </script>
+        </article>
+        <article class="card">
+          <h2>Prinsip Fotografi</h2>
+          <img
+            src="assets/img/fotografi2.jpg"
+            alt="Prinsip Fotografi"
+            class="picture"
+          />
+          <p>
+            Prinsip fotografi ialah memfokuskan cahaya dengan bantuan pembiasan,
+            sehingga mampu membakar medium penangkap cahaya. Medium tersebut
+            dibakar dengan luminans (ukuran intensitas cahaya yang berasal dari
+            sumber dalam satu arah) cahaya yang tepat, dan akan menghasilkan
+            bayangan identik dengan cahaya yang memasuki medium pembiasan, atau
+            yang selanjutnya disebut lensa. Agar intensitas cahaya tepat untuk
+            menghasilkan gambar, dibutuhkan alat bantu ukur bernama lightmeter.
+            Setelah mendapatkan pencahayaan yang tepat, fotografer bisa mengatur
+            intensitas cahaya tersebut dengan mengubah pengaturan pada kamera.
+          </p>
+        </article>
+        <article class="card">
+          <h2>Teknik Fotografi</h2>
+          <p>
+            Berisi beberapa teknik fotografi yang sering dipakai atau diterapkan
+            oleh para fotografer
+          </p>
+          <section>
+            <h3>Macro</h3>
+            <img src="assets/img/macro.jpg" alt="Macro" class="picture" />
+            <p>
+              Teknik dasar fotografi satu ini membantu fotografer untuk
+              menangkap gambar dari objek yang kecil. Namun, teknik macro
+              membutuhkan beberapa alat khusus. Kamu akan memerlukan lensa makro
+              dan beberapa peralatan lainnya.
+            </p>
+          </section>
+          <section>
+            <h3>Long Exposure</h3>
+            <img
+              src="assets/img/longexsposure.jpg"
+              alt="Long Exsposure"
+              class="picture"
+            />
+            <p>
+              Teknik dasar ini dapat digunakan dalam berbagai situasi, terutama
+              sebagai cara untuk menciptakan efek dramatis pada objek yang biasa
+              kita lihat sehari hari. Teknik ini mengharuskan kamu untuk
+              membiarkan shutter terbuka agak lama agar rona cahaya dapat
+              tertangkap, dan nantinya akan memudahkanmu untuk mengikuti arah
+              bergeraknya cahaya tersebut.
+            </p>
+          </section>
+          <section>
+            <h3>Siluet</h3>
+            <img src="assets/img/siluet.jpg" alt="Siluet" class="picture" />
+            <p>
+              Teknik ini dikenal karena sering kali digunakan fotografer untuk
+              gambar yang benar-benar menakjubkan. Mengambil foto siluet yang
+              baik membutuhkan pengetahuan teknis dan pemahaman cahaya, tetapi
+              hasilnya akan selalu sepadan dengan usaha yang keluarkan.
+            </p>
+          </section>
+        </article>
+
+        <article id=""></article>
+      </div>
+
+      <aside>
+        <article class="profil card">
+          <header>
+            <h2>Ikhwan Nashir Zaini</h2>
+            <p>
+              Seorang mahasiswa semester 6 di Telkom University, dan sedang
+              mengikuti program Bangkit 2023
+            </p>
+            <figure>
+              <img src="assets/img/fotoprofil.JPG" alt="Ikhwan Nashir Zaini" />
+            </figure>
+          </header>
+          <section>
+            <h3>Informasi Tambahan</h3>
+            <table>
+              <tr>
+                <th>Kewarganegaraan</th>
+                <td>Indonesia</td>
+              </tr>
+              <tr>
+                <th>TTL</th>
+                <td>Madiun, 30 Desember 2001</td>
+              </tr>
+              <tr>
+                <th>Asal</th>
+                <td>Kabupaten Madiun</td>
+              </tr>
+            </table>
+          </section>
+        </article>
+      </aside>
+    </main>
+
+    <footer>
+      <p>Ikhwan Nashir Zaini &#169; 2023, Bangkit 2023</p>
+    </footer>
+  </body>
+</html>
